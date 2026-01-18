@@ -19,6 +19,9 @@ Generate beautiful, minimalist map posters for any city in the world.
 | Singapore    | Singapore      | neon_cyberpunk  | <img src="posters/singapore_neon_cyberpunk_20260108_184503.png" width="250"> |
 | Australia    | Melbourne      | forest          | <img src="posters/melbourne_forest_20260108_181459.png" width="250"> |
 | UAE          | Dubai          | midnight_blue   | <img src="posters/dubai_midnight_blue_20260108_174920.png" width="250"> |
+| Canada       | Toronto        | noir            | <img src="posters/toronto_noir_20260118_122642.png" width="250"> |
+| Canada       | Vancouver      | ocean           | <img src="posters/vancouver_ocean_20260118_122957.png" width="250"> |
+| Canada       | Richmond       | noir            | <img src="posters/richmond_noir_20260118_110644.png" width="250"> |
 
 ## Installation
 
@@ -48,11 +51,13 @@ python create_map_poster.py --city <city> --country <country> [options]
 # Iconic grid patterns
 python create_map_poster.py -c "New York" -C "USA" -t noir -d 12000           # Manhattan grid
 python create_map_poster.py -c "Barcelona" -C "Spain" -t warm_beige -d 8000   # Eixample district
+python create_map_poster.py -c "Toronto" -C "Canada" -t noir -d 18000         # Toronto urban grid
 
 # Waterfront & canals
 python create_map_poster.py -c "Venice" -C "Italy" -t blueprint -d 4000       # Canal network
 python create_map_poster.py -c "Amsterdam" -C "Netherlands" -t ocean -d 6000  # Concentric canals
 python create_map_poster.py -c "Dubai" -C "UAE" -t midnight_blue -d 15000     # Palm & coastline
+python create_map_poster.py -c "Vancouver" -C "Canada" -t ocean -d 14000      # Pacific waterfront
 
 # Radial patterns
 python create_map_poster.py -c "Paris" -C "France" -t pastel_dream -d 10000   # Haussmann boulevards
@@ -71,6 +76,11 @@ python create_map_poster.py -c "Mumbai" -C "India" -t contrast_zones -d 18000 # 
 # River cities
 python create_map_poster.py -c "London" -C "UK" -t noir -d 15000              # Thames curves
 python create_map_poster.py -c "Budapest" -C "Hungary" -t copper_patina -d 8000  # Danube split
+
+# Canadian cities
+python create_map_poster.py -c "Toronto" -C "Canada" -t blueprint -d 12000    # Downtown peninsula
+python create_map_poster.py -c "Vancouver" -C "Canada" -t blueprint -d 12000  # Urban peninsula
+python create_map_poster.py -c "Richmond" -C "Canada" -t noir -d 12000        # Suburban grid
 
 # List available themes
 python create_map_poster.py --list-themes
